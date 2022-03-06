@@ -365,3 +365,5 @@ X Protocol Version 11, Revision 0
 [    51.405] (EE) No surface to present from.
 [  1627.945] (II) event4  - ImExPS/2 Generic Explorer Mouse: Enabling spurious button debouncing, see https://wayland.freedesktop.org/libinput/doc/1.10.4/button_debouncing.html for details
 [  2095.774] (EE) No surface to present from.
+[  2550.828] (EE) No surface to present from.
+[  5826.263] (EE) No surface to present from.
