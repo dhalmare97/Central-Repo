@@ -1,0 +1,20 @@
+src code -- java --> maven(compile --> test  --> package) --> abc.war
+
+Docker file(pulling tomcat image from dockerhub, adding war file to tomcat webapps dir,running tomcat) --> Build image from file --> docker run image -> container
+
+Kubernetes --> using image to create deployment (pods) and service
+
+
+
+connectivity between 2 pods
+         node
+kubernetes cluster
+namespace1	namespace
+
+pod1            pod2
+container	container
+
+	localhost
+
+
+

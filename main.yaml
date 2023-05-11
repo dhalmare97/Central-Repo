@@ -1,0 +1,17 @@
+- name: Create deployment and service in kubernetes
+  hosts: master
+  become: true
+  user: edureka
+  tasks:
+    - name: Create deployment
+      command: kubectl apply -f deployment-definition.yaml --kubeconfig=/home/edureka/.kube/admin.conf
+      args:
+        chdir: /home/edureka/devops-project/kubernetes
+   
+    - name: Update deployment with new pods if docker hub image is updated
+      command: kubectl rollout restart deployment abc-tech-deployment --kubeconfig=/home/edureka/.kube/admin.conf
+       
+    - name: Create webapp service
+      command: kubectl apply -f service-definition.yaml --kubeconfig=/home/edureka/.kube/admin.conf
+      args:
+        chdir: /home/edureka/devops-project/kubernetes
